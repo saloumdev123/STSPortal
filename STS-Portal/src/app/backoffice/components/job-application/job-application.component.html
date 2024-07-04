@@ -1,0 +1,35 @@
+<div>
+    <h2>Apply for Job</h2>
+    <form [formGroup]="jobApplicationForm" >
+      <div>
+        <label for="firstName">First Name:</label>
+        <input id="firstName" formControlName="firstName" type="text" required>
+      </div>
+      <div>
+        <label for="lastName">Last Name:</label>
+        <input id="lastName" formControlName="lastName" type="text" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input id="email" formControlName="email" type="email" required>
+      </div>
+      <div>
+        <label for="country">Country:</label>
+        <input id="country" formControlName="country" type="text" required>
+      </div>
+      <div>
+        <label for="city">City:</label>
+        <input id="city" formControlName="city" type="text" required>
+      </div>
+     <div>
+        <label for="jobTitle">Job Title:</label>
+        <input id="jobTitle" formControlName="jobTitle" type="text" required>
+      </div>
+  <div>
+        <label for="jobDescription">Job Description:</label>
+        <textarea id="jobDescription" formControlName="jobDescription" required></textarea>
+      </div>
+      <button type="submit" (ngSubmit)="apply()">Apply</button>
+    </form>
+  </div>
+  
